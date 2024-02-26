@@ -14,6 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
       vehicleGroup.style.display = "block";
       distance.style.display = "block";
       motor.style.display = "block";
+      materialLabel.innerText = "6. Matériel:";
+      kwhLabel.innerText = "7. Consommation d'électricité (KWH par an):";
+      heatingLabel.innerText = "8. Type de chauffage:";
+      heatingKwhLabel.innerText = "9. Consommation de chauffage (KWH par an):";
+      recyclageLabel.innerText = "10. Recyclage:";
     } else {
       vehicleGroup.style.display = "none";
       distance.style.display = "none";
