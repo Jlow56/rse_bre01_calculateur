@@ -1,0 +1,77 @@
+*{
+	min-width: 0;
+	font: inherit;
+}
+
+*, *::before,*::after{
+	box-sizing: border-box;
+}
+
+img, video, svg{
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+p{
+text-wrap: pretty;
+}
+
+html {
+	font-size: 62.5%;  
+}
+body {
+    margin: 0;
+    padding: 0;
+	width: 100vw;
+	height: 100vh;
+    font-size: 1.9rem;
+    background-color: #ECECEC;
+	font-family: "Poppins", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	text-wrap: balance;
+}
+
+/********MAIN**********/
+
+.container h1{
+	text-align: center;
+}
+/*******MAIN - form********/
+
+.form{
+	margin: 2em 0 2em 15em;
+}
+
+.form input, .form select{
+	border-radius: 1rem;
+	width: 70%;
+	font-size: 1.6rem;
+}
+
+.form-check-input {
+    position: absolute;
+    margin-top: 0.8rem; 
+}
+
+.btn{
+	background-color: black;
+	color:  #ECECEC;
+	border-radius: 1rem;
+	padding: 0.5em 2em;
+	margin-left: 25em;
+}
+/**********FOOTER*********************/
+
+.footer-img{
+	background-image: url(/rse_bre01_calculateur/styles/img/9626037-silhouette-paysage-avec-brouillard-foret-pins-montagnes-illustration-du-parc-national-vue-brume-noir-et-blanc-bon-pour-papier-peint-fond-banniere-couverture-affiche-gratuit-vectoriel.jpg);
+	padding: 10em;
+	background-position: center;
+	background-size: cover;
+}
