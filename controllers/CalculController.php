@@ -1,6 +1,5 @@
 <?php
 
-
 class CalculController extends AbstractController
 {
     public function calcul($post) {
@@ -19,6 +18,7 @@ class CalculController extends AbstractController
             $totalCo2 =  $ConsoDistanciel*(0.06*24+0.077*45+0.137*490+0.049*820+0.666*12+0.011*11)*0.1;
         } else {
             $consoPc = 0.24;
+            $km = $post['distance'];
             if($post['engine'] === “Thermique”) {
                 $consoTypeMoteur = 175;
             } else {
@@ -35,14 +35,16 @@ class CalculController extends AbstractController
             } else if ($post['vehicle'] === “Covoiturage”) {
                 $consoTransport = 155.5 / 2;
             } else {
-                $consoTransport =0;
+                $consoTransport = 0;
             }
 
             $totalCo2 = $consoTransport + ($consoPc*0.1);
         }
 
-        $user = new User();
-        $users = $userManager->findAll();
+        $user = new User($post['name'], $post['presence'], $post['vehicle'], $km, $post['engine'], $post['material'], $post['heating'], $post['heating-kwh'], $post['Recyclage'], $totalCo2);
+        $userCreate = $userManager->CreateUser($user);
+
+        $users = $userManager->getAllUsers();
         $this->render("results.html.twig", [
             'users' => $users,
         ]);
