@@ -50,7 +50,7 @@
             <option value="avion">Avion</option>
           </select>
         </div>
-        <div class="form-group">
+        <div class="form-group" id="distance">
           <label for="distance">4. Distance parcourue (en kilomètres):</label>
           <input
             type="number"
@@ -59,7 +59,7 @@
             name="distance"
           />
         </div>
-        <div class="form-group">
+        <div class="form-group" id="motor">
           <label for="engine">5. Type de moteur:</label>
           <select class="form-control" id="engine" name="engine">
             <option value="thermique">Thermique</option>
@@ -67,18 +67,20 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="material">6. Matériel:</label>
+          <label for="material" id="material-label">6. Matériel:</label>
           <select class="form-control" id="material" name="material">
             <option value="portable">Portable</option>
             <option value="fixe">Fixe</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="kwh">7. Consommation d'électricité (KWH par an):</label>
+          <label for="kwh" id="kwh-label"
+            >7. Consommation d'électricité (KWH par an):</label
+          >
           <input type="number" class="form-control" id="kwh" name="kwh" />
         </div>
         <div class="form-group">
-          <label for="heating">8. Type de chauffage:</label>
+          <label for="heating" id="heating-label">8. Type de chauffage:</label>
           <select class="form-control" id="heating" name="heating">
             <option value="elec">Électrique</option>
             <option value="gaz">Gaz</option>
@@ -86,7 +88,7 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="heating-kwh"
+          <label for="heating-kwh" id="heating-kwh-label"
             >9. Consommation de chauffage (KWH par an):</label
           >
           <input
@@ -97,7 +99,7 @@
           />
         </div>
         <div class="form-group">
-          <label>10. Recyclage:</label>
+          <label id="recyclage-label">10. Recyclage:</label>
           <div class="form-check">
             <input
               class="form-check-input"
