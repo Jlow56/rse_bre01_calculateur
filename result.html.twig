@@ -1,0 +1,7 @@
+{% extends "layout.html.twig" %}
+
+{% block result %}
+        <h1>Votre bilan carbone :</h1>
+        <p>Votre consommation{{}}
+        <p>{{ users|last.getResult_co2 }}</p>
+{% endblock %}
