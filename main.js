@@ -14,11 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
       vehicleGroup.style.display = "block";
       distance.style.display = "block";
       motor.style.display = "block";
-      materialLabel.innerText = "6. Matériel:";
-      kwhLabel.innerText = "7. Consommation d'électricité (KWH par an):";
-      heatingLabel.innerText = "8. Type de chauffage:";
-      heatingKwhLabel.innerText = "9. Consommation de chauffage (KWH par an):";
-      recyclageLabel.innerText = "10. Recyclage:";
+      materialLabel.innerText = "6. Quel type de PC avez vous ?";
+      kwhLabel.innerText =
+        "7. Quelle est la consommation d'électricité pour votre bâtiment ? (en kw/heure)";
+      heatingLabel.innerText =
+        "8. Quel type d’énergie utilisez-vous pour le chauffage ?";
+      heatingKwhLabel.innerText =
+        "9. Quelle est votre consommation d’énergie pour le chauffage ?";
+      recyclageLabel.innerText = "10. Pratiquez vous le recyclage ?";
     } else {
       vehicleGroup.style.display = "none";
       distance.style.display = "none";
@@ -32,11 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
       vehicleGroup.style.display = "none";
       distance.style.display = "none";
       motor.style.display = "none";
-      materialLabel.innerText = "3. Matériel:";
-      kwhLabel.innerText = "4. Consommation d'électricité (KWH par an):";
-      heatingLabel.innerText = "5. Type de chauffage:";
-      heatingKwhLabel.innerText = "6. Consommation de chauffage (KWH par an):";
-      recyclageLabel.innerText = "7. Recyclage:";
+      materialLabel.innerText = "3. Quel type de PC avez vous ?";
+      kwhLabel.innerText =
+        "4. Quelle est la consommation d'électricité pour votre bâtiment ? (en kw/heure)";
+      heatingLabel.innerText =
+        "5. Quel type d’énergie utilisez-vous pour le chauffage ?";
+      heatingKwhLabel.innerText =
+        "6. Quelle est votre consommation d’énergie pour le chauffage ?";
+      recyclageLabel.innerText = "7. Pratiquez vous le recyclage ?";
     }
   });
 });
