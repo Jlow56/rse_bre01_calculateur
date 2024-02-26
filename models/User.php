@@ -2,11 +2,11 @@
 
 class User
 {
+    private ?int $id = null;
+    private ?int $result_co2 = null;
 
-    private int $result_co2;
 
-
-    public function __construct(private string $name, private string $presentiel_distanciel, private string $vehicule, private int $distance, private string $type_moteur, private string $materiel, private string $type_chauffage, private int $conso_chauffage, private bool $recyclage)
+    public function __construct(private string $name, private string $presentiel_distanciel, private string $vehicule, private ?int $distance, private string $type_moteur, private string $materiel, private string $type_chauffage, private int $conso_chauffage, private ?bool $recyclage, int $result_co2)
     {
         $this->name = $name;
         $this->presentiel_distanciel = $presentiel_distanciel;
@@ -17,6 +17,7 @@ class User
         $this->type_chauffage = $type_chauffage;
         $this->conso_chauffage = $conso_chauffage;
         $this->recyclage = $recyclage;
+        $this->result_co2 = $result_co2;
     }
 
     /**
@@ -195,6 +196,46 @@ class User
     public function setRecyclage($recyclage)
     {
         $this->recyclage = $recyclage;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of id
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set the value of id
+     *
+     * @return  self
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of result_co2
+     */
+    public function getResult_co2()
+    {
+        return $this->result_co2;
+    }
+
+    /**
+     * Set the value of result_co2
+     *
+     * @return  self
+     */
+    public function setResult_co2($result_co2)
+    {
+        $this->result_co2 = $result_co2;
 
         return $this;
     }
