@@ -1,41 +1,26 @@
 <?php
 
-class Game {
-    private int $id;
-    public function __construct(private string $name, private string $date, private Team $team_1, private Team $team_2, private Team $winner)
+class User
+{
+
+    private int $result_co2;
+
+
+    public function __construct(private string $name, private string $presentiel_distanciel, private string $vehicule, private int $distance, private string $type_moteur, private string $materiel, private string $type_chauffage, private int $conso_chauffage, private bool $recyclage)
     {
-
-    }
-
-
-    /**
-     * Get the value of id
-     *
-     * @return  mixed
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * Set the value of id
-     *
-     * @param   mixed  $id  
-     *
-     * @return  self
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-
-        return $this;
+        $this->name = $name;
+        $this->presentiel_distanciel = $presentiel_distanciel;
+        $this->vehicule = $vehicule;
+        $this->distance = $distance;
+        $this->type_moteur = $type_moteur;
+        $this->materiel = $materiel;
+        $this->type_chauffage = $type_chauffage;
+        $this->conso_chauffage = $conso_chauffage;
+        $this->recyclage = $recyclage;
     }
 
     /**
      * Get the value of name
-     *
-     * @return  mixed
      */
     public function getName()
     {
@@ -44,8 +29,6 @@ class Game {
 
     /**
      * Set the value of name
-     *
-     * @param   mixed  $name  
      *
      * @return  self
      */
@@ -57,97 +40,161 @@ class Game {
     }
 
     /**
-     * Get the value of date
-     *
-     * @return  mixed
+     * Get the value of presentiel_distanciel
      */
-    public function getDate()
+    public function getPresentiel_distanciel()
     {
-        return $this->date;
+        return $this->presentiel_distanciel;
     }
 
     /**
-     * Set the value of date
-     *
-     * @param   mixed  $date  
+     * Set the value of presentiel_distanciel
      *
      * @return  self
      */
-    public function setDate($date)
+    public function setPresentiel_distanciel($presentiel_distanciel)
     {
-        $this->date = $date;
+        $this->presentiel_distanciel = $presentiel_distanciel;
 
         return $this;
     }
 
     /**
-     * Get the value of team_1
-     *
-     * @return  mixed
+     * Get the value of vehicule
      */
-    public function getTeam_1()
+    public function getVehicule()
     {
-        return $this->team_1;
+        return $this->vehicule;
     }
 
     /**
-     * Set the value of team_1
-     *
-     * @param   mixed  $team_1  
+     * Set the value of vehicule
      *
      * @return  self
      */
-    public function setTeam_1($team_1)
+    public function setVehicule($vehicule)
     {
-        $this->team_1 = $team_1;
+        $this->vehicule = $vehicule;
 
         return $this;
     }
 
     /**
-     * Get the value of team_2
-     *
-     * @return  mixed
+     * Get the value of distance
      */
-    public function getTeam_2()
+    public function getDistance()
     {
-        return $this->team_2;
+        return $this->distance;
     }
 
     /**
-     * Set the value of team_2
-     *
-     * @param   mixed  $team_2  
+     * Set the value of distance
      *
      * @return  self
      */
-    public function setTeam_2($team_2)
+    public function setDistance($distance)
     {
-        $this->team_2 = $team_2;
+        $this->distance = $distance;
 
         return $this;
     }
 
     /**
-     * Get the value of winner
-     *
-     * @return  mixed
+     * Get the value of type_moteur
      */
-    public function getWinner()
+    public function getType_moteur()
     {
-        return $this->winner;
+        return $this->type_moteur;
     }
 
     /**
-     * Set the value of winner
-     *
-     * @param   mixed  $winner  
+     * Set the value of type_moteur
      *
      * @return  self
      */
-    public function setWinner($winner)
+    public function setType_moteur($type_moteur)
     {
-        $this->winner = $winner;
+        $this->type_moteur = $type_moteur;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of materiel
+     */
+    public function getMateriel()
+    {
+        return $this->materiel;
+    }
+
+    /**
+     * Set the value of materiel
+     *
+     * @return  self
+     */
+    public function setMateriel($materiel)
+    {
+        $this->materiel = $materiel;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of type_chauffage
+     */
+    public function getType_chauffage()
+    {
+        return $this->type_chauffage;
+    }
+
+    /**
+     * Set the value of type_chauffage
+     *
+     * @return  self
+     */
+    public function setType_chauffage($type_chauffage)
+    {
+        $this->type_chauffage = $type_chauffage;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of conso_chauffage
+     */
+    public function getConso_chauffage()
+    {
+        return $this->conso_chauffage;
+    }
+
+    /**
+     * Set the value of conso_chauffage
+     *
+     * @return  self
+     */
+    public function setConso_chauffage($conso_chauffage)
+    {
+        $this->conso_chauffage = $conso_chauffage;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of recyclage
+     */
+    public function getRecyclage()
+    {
+        return $this->recyclage;
+    }
+
+    /**
+     * Set the value of recyclage
+     *
+     * @return  self
+     */
+    public function setRecyclage($recyclage)
+    {
+        $this->recyclage = $recyclage;
 
         return $this;
     }
