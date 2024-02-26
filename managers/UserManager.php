@@ -14,7 +14,7 @@ class UserManager extends AbstractManager
         foreach ($users_datas as $users_data) {
 
             $user = new User($users_data['name'], $users_data['presentiel_distanciel'], $users_data['vehicule'], $users_data['distance'], $users_data['type_moteur'], $users_data['materiel'], $users_data['type_chauffage'], $users_data['conso_chauffage'], $users_data['recyclage'], $users_data['result_co2']);
-            $user->setId($users_data['id']);
+            $user->setId($users_data['ID']);
             $users_array[] = $user;
         }
 

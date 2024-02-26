@@ -1,0 +1,36 @@
+{% block content %}
+    <article>
+        <h3 class="title_team title_team_page">{{user.getName()}}</h3>
+
+        <table>
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>name</td>
+                <td>presentiel_distanciel</td>
+                <td>vehicule</td>
+                <td>distance</td>
+                <td>type_moteur</td>
+                <td>materiel</td>
+                <td>type_chauffage</td>
+                <td>conso_chauffage</td>
+                <td>recyclage</td>
+                <td>result_co2</td>
+            </tr>
+        <thead>
+            <tr>
+                <td>{{users|last.getId()}}</td>
+                <td>{{users|last.getName()}}</td>
+                <td>{{users|last.getPresentiel_distanciel()}}</td>
+                <td>{{users|last.getVehicule()}}</td>
+                <td>{{users|last.getDistance()}}</td>
+                <td>{{users|last.getType_moteur()}}</td>
+                <td>{{users|last.getMateriel()}}</td>
+                <td>{{users|last.getType_chauffage()}}</td>
+                <td>{{users|last.getConso_chauffage()}}</td>
+                <td>{{users|last.getRecyclage()}}</td>
+                <td>{{users|last.getResult_co2()}}</td>
+            </tr>   
+
+    </article>
+{% endblock %}

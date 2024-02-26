@@ -17,7 +17,7 @@ class Router
             $this->pc->home();
         }
         if(isset($get['route']) && $get['route'] === "calcul") {
-            $this->cc->calcul($get);
+            $this->cc->calcul($_POST);
         }
         else
         {
